@@ -1,6 +1,6 @@
-# Car Renting System 🚗💨
+# Car Renting System 
 
-![Golden Car Rental System](https://via.placeholder.com/150) <!-- Consider adding a logo/banner here -->
+![Golden Car Rental System]
 
 ## Project Description
 
@@ -45,62 +45,36 @@ Run the application:
 
 bash
 java -jar target/your-application.jar
-Project Structure 📂
-text
-oopProjectCarRent/
-├── pom.xml
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── mycompany/
-│   │               └── oopprojectcarrent/
-│   │                   ├── Bus.java
-│   │                   ├── Car.java
-│   │                   ├── Client.java
-│   │                   ├── NormalCar.java
-│   │                   ├── OopProjectCarRent.java
-│   │                   └── RentTransaction.java
-│   └── test/
-│       └── java/
-└── Car.dat (generated after first run)
+
+
 Class Descriptions 🧩
-Class	Description
-OopProjectCarRent.java	Main application class with GUI and event handling
-Car.java	Abstract base class for all vehicles (implements Comparable and Serializable)
-NormalCar.java	Extends Car with maxRentDuration and discount properties
-Bus.java	Extends Car with capacity property
-Client.java	Represents a client with personal details
-RentTransaction.java	Represents a rental transaction between Car and Client
+- OopProjectCarRent.java	Main application class with GUI and event handling
+- Car.java	Abstract base class for all vehicles (implements Comparable and Serializable)
+- NormalCar.java	Extends Car with maxRentDuration and discount properties
+- Bus.java	Extends Car with capacity property
+- Client.java	Represents a client with personal details
+- RentTransaction.java	Represents a rental transaction between Car and Client
+
+
+
 Usage 🖥️
 Upon launching, you'll see the main menu with these options:
 
-Rent a car:
-
-Enter client details
-
-Select available car
-
-Return a car:
-
-Select rented car to mark as returned
-
-Add a car:
-
-Choose 'Normal Car' or 'Bus'
-
-Provide required details
-
-See cars:
-
-View comprehensive car list
-
-Check history:
-
-Enter date range to view transactions
+- Rent a car:
+- Enter client details
+- Select available car
+- Return a car:
+- Select rented car to mark as returned
+- Add a car:
+- Choose 'Normal Car' or 'Bus'
+- Provide required details
+- See cars:
+- View comprehensive car list
+- Check history
+- Enter date range to view transactions
 
 Persistence 💾
-The application uses Java serialization to save/load ArrayList<Car> objects to/from Car.dat, preserving car fleet data and transaction histories across sessions.
+- The application uses Java serialization to save/load ArrayList<Car> objects to/from Car.dat, preserving car fleet data and transaction histories across sessions.
 
 
 
