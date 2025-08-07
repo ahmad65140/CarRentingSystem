@@ -102,15 +102,13 @@ Enter date range to view transactions
 Persistence 💾
 The application uses Java serialization to save/load ArrayList<Car> objects to/from Car.dat, preserving car fleet data and transaction histories across sessions.
 
+
+
 Contributing 🤝
 Contributions are welcome! Please:
 
-Fork the repository
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+- Fork the repository
+- Create your feature branch (git checkout -b feature/AmazingFeature)
+- Commit your changes (git commit -m 'Add some AmazingFeature')
+- Push to the branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
