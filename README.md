@@ -1,34 +1,52 @@
-# CarRentingSystem
+# Car Renting System 🚗💨
 
-Golden Car Rental System
+![Golden Car Rental System](https://via.placeholder.com/150) <!-- Consider adding a logo/banner here -->
 
-Project Description
+## Project Description
 
 This is a Java-based desktop application for managing a car rental system. It allows users to rent and return cars (including normal cars and buses), add new vehicles to the fleet, view available cars, and check transaction history within specified date ranges. The application features a graphical user interface (GUI) built with Swing.
 
-Features
+## Features ✨
 
-• Car Management: Add new normal cars and buses with details like name, color, ID, chassis number, regular renting price, maximum allowed rentals, and specific attributes (max rent duration and discount for normal cars, capacity for buses).
-• Car Rental: Rent available cars to clients, capturing client details (name, SNN, phone number, address).
-• Car Return: Mark rented cars as returned.
-• View Available Cars: Display a list of all cars in the fleet, showing their availability and other relevant details.
-• Transaction History: View rental transactions between two specified dates.
-• Data Persistence: Car data is saved to and loaded from a Car.dat file, ensuring data is not lost upon application closure.
-• User-Friendly GUI: Intuitive interface for easy navigation and operation.
+- **Car Management**: Add new normal cars and buses with details like:
+  - Name, color, ID, chassis number
+  - Regular renting price
+  - Maximum allowed rentals
+  - Specific attributes (max rent duration and discount for normal cars, capacity for buses)
 
+- **Car Rental**: Rent available cars to clients, capturing:
+  - Client details (name, SNN, phone number, address)
 
-How to Run
+- **Car Return**: Mark rented cars as returned
 
-1.Prerequisites:
-    • Java Development Kit (JDK) 8 or higher.
-    • Apache Maven (for building the project).
-2. Clone the repository:
-3. Build the project using Maven:
-4. Run the application:
+- **View Available Cars**: Display a list of all cars in the fleet with availability status
 
+- **Transaction History**: View rental transactions between specified dates
 
-Project Structure
+- **Data Persistence**: Car data is saved to and loaded from `Car.dat` file
 
+- **User-Friendly GUI**: Intuitive Swing interface for easy navigation
+
+## How to Run ▶️
+
+### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- Apache Maven (for building the project)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/CarRentingSystem.git
+Build the project using Maven:
+
+bash
+mvn clean install
+Run the application:
+
+bash
+java -jar target/your-application.jar
+Project Structure 📂
+text
 oopProjectCarRent/
 ├── pom.xml
 ├── src/
@@ -46,36 +64,53 @@ oopProjectCarRent/
 │   └── test/
 │       └── java/
 └── Car.dat (generated after first run)
+Class Descriptions 🧩
+Class	Description
+OopProjectCarRent.java	Main application class with GUI and event handling
+Car.java	Abstract base class for all vehicles (implements Comparable and Serializable)
+NormalCar.java	Extends Car with maxRentDuration and discount properties
+Bus.java	Extends Car with capacity property
+Client.java	Represents a client with personal details
+RentTransaction.java	Represents a rental transaction between Car and Client
+Usage 🖥️
+Upon launching, you'll see the main menu with these options:
 
+Rent a car:
 
-Class Descriptions
+Enter client details
 
-• OopProjectCarRent.java: The main application class, responsible for the GUI, event handling, and overall application flow.
-• Car.java: An abstract base class for all vehicles, defining common properties and behaviors (e.g., name, color, ID, rentCar(), returnCar()). Implements Comparable for sorting by dateOfOwning and Serializable for persistence.
-• NormalCar.java: Extends Car, representing a standard car with additional properties like maxRentDuration and discount. Overrides calculatePrice() to include discount logic.
-• Bus.java: Extends Car, representing a bus with a capacity property. Overrides calculatePrice() based on capacity.
-• Client.java: Represents a client with properties like name, SNN (Social Security Number), phoneNumber, and address.
-• RentTransaction.java: Represents a rental transaction, linking a Car and a Client with a transactionDate.
+Select available car
 
+Return a car:
 
+Select rented car to mark as returned
 
-Usage
+Add a car:
 
-Upon launching the application, you will be presented with the main menu. From there, you can navigate to different sections:
+Choose 'Normal Car' or 'Bus'
 
-• Rent a car: Enter client details and select an available car to rent.
-• Return a car: Select a currently rented car to mark it as returned.
-• Add a car: Choose to add either a 'Normal Car' or a 'Bus' and provide the required details.
-• See cars: View a comprehensive list of all cars in the system.
-• Check history: Enter a date range to view all transactions that occurred within that period.
+Provide required details
 
+See cars:
 
-Persistence
+View comprehensive car list
 
-The application uses Java's built-in serialization to save and load ArrayList<Car> objects to/from Car.dat file. This ensures that the car fleet and their associated transaction histories are preserved across application sessions.
+Check history:
 
-Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+Enter date range to view transactions
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+Persistence 💾
+The application uses Java serialization to save/load ArrayList<Car> objects to/from Car.dat, preserving car fleet data and transaction histories across sessions.
 
+Contributing 🤝
+Contributions are welcome! Please:
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
